@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | PLATFORMER</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="hbtn-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">PLATFORMER</div>
+      </div>
+      <div class="controls"><b>MOVE:</b> WASD or Arrow Keys<br /><b>JUMP:</b> Space<br /><b>CAMERA:</b> Right-Click + Drag<br /><b>ESC:</b> Menu</div>
+      <div class="description"><h4>0x07. Unity - Animation</h4>
+        <p>Project Goals:</p>
+        <ul>
+          <li>import animations and configure them appropriately</li>
+          <li>use Animation Controllers and State Machines</li>
+        </ul>            
+        <p>Assets:</p>
+        <ul>
+          <li><a href="https://kenney.nl/assets/nature-pack-extended">Kenney's Nature Pack Extended</a></li>
+          <li><a href="http://mixamo.com/">mixamo.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
